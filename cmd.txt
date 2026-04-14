@@ -1,0 +1,21 @@
+where python 
+
+bat '"C:\\Users\\kokar\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" mail.py'
+
+ pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Jenkins is working successfully 🚀'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Pipeline executed successfully ✅'
+            }
+        }
+    }
+}
