@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Send Mail') {
             steps {
-                echo 'Building...'
+                bat 'python mail.py'
             }
         }
     }
