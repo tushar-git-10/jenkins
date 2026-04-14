@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Send Mail') {
             steps {
-                bat 'python mail.py'
+                bat '"C:\\Users\\kokar\\AppData\\Local\\Programs\\Python\\Python310\\python.exe" mail.py'
             }
         }
     }
